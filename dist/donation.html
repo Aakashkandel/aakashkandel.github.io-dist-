@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss. com"></script>
+    <link rel="stylesheet" href="output.css">
+    <!-- DataTables CSS and JavaScript files -->
+    <link rel="stylesheet" type="text/css" href="../../node_modules/datatables.net-dt/css/jquery.dataTables.min.css">
+</head>
+</head>
+<body>
+    <div class="flex justify-around py-5">
+        <div class=" bg-purple-600 rounded-2xl w-96 flex justify-around text-center">
+            <div>
+                <h2 class="font-bold text-2xl">Total Donation</h2>
+                <h3 class="font-bold text-3xl text-white">52</h3>
+            </div>
+            <div>
+               <img class="w-36 " src="image/donation.png" alt=""> 
+            </div>
+        </div>
+        <div class=" bg-green-600 rounded-2xl w-96 flex justify-around text-center">
+            <div>
+                <h2 class="font-bold text-2xl">Total Safe Life</h2>
+                <h3 class="font-bold text-3xl text-white">34</h3>
+            </div>
+            <div>
+               <img class="w-36 " src="image/safe life.png" alt=""> 
+            </div>
+        </div>
+
+       <div class=" flex items-center">
+        <a href="" class="bg-blue-600 font-semibold p-3 rounded-lg text-white   ">Print Card</a>
+       </div>
+        
+    </div>
+    <div class=" h-screen">
+        <table class="min-w-full leading-normal " id="myTable">
+            <thead class="">
+                <tr>
+                    <th scope="col" class="px-5 py-3 text-sm font-normal text-left text-gray-800 uppercase bg-white border-b border-gray-200">
+                        S.N
+                    </th>
+                    <th scope="col" class="px-5 py-3 text-sm font-normal text-left text-gray-800 uppercase bg-white border-b border-gray-200">
+                            image
+                       </th>
+                    <th scope="col" class="px-5 py-3 text-sm font-normal text-left text-gray-800 uppercase bg-white border-b border-gray-200">
+                     ORGANIZATION
+                    </th>
+                    <th scope="col" class="px-5 py-3 text-sm font-normal text-left text-gray-800 uppercase bg-white border-b border-gray-200">
+                        DATE
+                    </th>
+                    <th scope="col" class="px-5 py-3 text-sm font-normal text-left text-gray-800 uppercase bg-white border-b border-gray-200">
+                        STATUS
+                    </th>
+                    <th scope="col" class="px-5 py-3 text-sm font-normal text-left text-gray-800 uppercase bg-white border-b border-gray-200">
+                        PRINT
+                    </th>
+                    <th scope="col" class="px-5 py-3 text-sm font-normal text-left text-gray-800 uppercase bg-white border-b border-gray-200">
+                        Action
+                    </th>
+                    <th scope="col" class="px-5 py-3 text-sm font-normal text-left text-gray-800 uppercase bg-white border-b border-gray-200">
+                        MORE
+                    </th>
+                   
+            </thead>
+            <tbody>
+              
+                    <tr>
+                        <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
+                            <p class="text-gray-900 whitespace-no-wrap">
+                            <p class="text-gray-900 whitespace-no-wrap">
+                                1.
+                            </p>
+                            </p>
+                        </td>
+                        
+                        <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
+                            <p class="text-gray-900 whitespace-no-wrap w-full h-24 pb-[50%] relative">
+                                <img src="image/blood2.png" class="absolute inset-0 w-full h-full object-cover" alt="">
+                            </p>
+                        </td>
+                        <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
+                            <p class="text-gray-900 whitespace-no-wrap">
+                               Red Cross Society
+                            </p>
+                        </td>
+                        <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
+                            <p class="text-gray-900 whitespace-no-wrap">
+                               2022/07/22
+                            </p>
+                        </td>
+                        <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
+                            <p class="text-gray-900 whitespace-no-wrap">
+                               
+                                Pending
+                            </p>
+                        </td>
+                        <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
+                            <p class="text-gray-900 whitespace-no-wrap">
+                               Not Available
+
+                            </p>
+                        </td>
+
+                        <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
+                            <a href="" class="px-2 py-3 bg-red-600  font-semibold text-white rounded-md text-center">
+                                cancel
+                            </a>
+                        </td>
+                        <td class="px-5 py-5 text-sm border-b border-gray-200">
+                            <a href="" class="px-2 py-3 bg-green-300  rounded-md text-center">
+                                View Details
+                            </a>
+                        </td>
+                    </tr>
+               
+            </tbody>
+        </table>
+        <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="../../node_modules/datatables.net/js/jquery.dataTables.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                // Initialize the DataTable
+                $('#myTable').DataTable();
+            });
+        </script>
+
+    </div>
+
+
+
+
+
+
+
+    
+      
+                            
+                        
+    </body>
+    
+    </html>
+
+
+
+   
+</body>
+</html>
