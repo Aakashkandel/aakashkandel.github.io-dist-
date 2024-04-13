@@ -51,6 +51,15 @@
             animation-delay: 0.5s;
             /* Delay the animation */
         }
+
+
+        
+  .xs:hidden { display: none; }
+
+  .menu{
+    position: relative;
+    top:0;
+  }
     </style>
 
 </head>
@@ -73,10 +82,21 @@
         <div class="area">
 
             <nav class="   text-black font-semibold z-10 navhero fixed w-full">
-                <ul class="flex justify-between items-center ">
-                    <div class=" justify-around  rounded-tr-full   xs:hidden  lg:w-3/12  lg:block lg:flex    text-lg ">
+              
+                <ul class="flex justify-between items-center x ">
+                    <button class="menu lg:hidden" onclick="toggleMenu()">
+                        <svg class="h-5 w-5 " viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none">
+                            <path fill="#000000" fill-rule="evenodd"
+                                d="M19 4a1 1 0 01-1 1H2a1 1 0 010-2h16a1 1 0 011 1zm0 6a1 1 0 01-1 1H2a1 1 0 110-2h16a1 1 0 011 1zm-1 7a1 1 0 100-2H2a1 1 0 100 2h16z" />
+                        </svg></button>
+                 
+                    <div id="menuItems" class=" justify-around  rounded-tr-full      lg:w-3/12   lg:flex    text-lg ">
+
+
+
+
                         <li
-                            class="mr-2 px-2 rounded-xl text-black scale-110 transition-transform duration-200 ease-in-out xs:text-sm md:text-base lg:text-xl font-medium text-sm ">
+                            class="  mr-2 px-2 rounded-xl text-black scale-110 transition-transform duration-200 ease-in-out xs:text-sm md:text-base lg:text-xl font-medium text-sm ">
 
                             <a class="flex h-full items-center " href="#">
 
@@ -159,10 +179,25 @@
                                 </div>
                             </a>
                         </li>
+
+
+                        
+                        <li
+                            class="mr-2 px-2 rounded-xl text-black  scale-110 transition-transform duration-200 ease-in-out xs:text-sm md:text-base font-medium text-sm lg:hidden mb-3 ">
+
+                            <a href="document/aakash2.pdf"
+                            class="bg-blue-900 hover:bg-blue-800 text-white font-bold py-1 mx-5 px-2 rounded-lg xs:text-sm  lg:text-xl "
+                            target="_blank">
+                            View CV
+                        </a>
+                        </li>
+
+
+                      
                     </div>
 
                     <a href="document/aakash2.pdf"
-                        class="bg-blue-900 hover:bg-blue-800 text-white font-bold py-1 mx-5 px-2 rounded-lg xs:text-sm lg:text-xl"
+                        class="bg-blue-900 hover:bg-blue-800 text-white font-bold py-1 mx-5 px-2 rounded-lg xs:text-sm  lg:text-xl xs:hidden"
                         target="_blank">
                         View CV
                     </a>
@@ -193,7 +228,7 @@
 
             <div>
                 <h1
-                    class=" typing-animation  text-gray-200 pt-16 p-1 w-2/6 m-auto rounded-2xl font-bold  text-center  text-blue-950 xs:text-xl lg:text-4xl">
+                    class=" typing-animation pt-3  text-white pt-16  w-2/6 m-auto rounded-2xl font-bold  text-center  text-blue-950 xs:text-xl lg:text-4xl">
                     Welcome
                     to my portfolio!</h1>
             </div>
@@ -204,39 +239,39 @@
                         <h3 class=" text-gray-200 text-3xl font-semibold  xs:text-xl lg:text-3xl">Hello, <span
                                 class="text-purple-300 ">I'M</span></h3>
                         <h2 class=" text-yellow-400 text-4xl font-bold  xs:text-2xl lg:text-4xl mb-1">Aakash Kandel</h2>
-                        <h4 class="text-gray-300 font-bold text-3xl mt-2 xs:text-xl lg:text-3xl ">A Software Developer
+                        <h4 class="text-gray-300 font-bold text-3xl mt-2 xs:text-xl lg:text-3xl ">A Full Stack Developer
                             And Creative
                             Designer</h4>
-                        <p class="text-white text-2xl xs:text-sm lg:text-2xl">I'm a creative designer and</p>
-                        <p class="text-purple-200 text-2xl m-0 p-0 xs:text-sm lg:text-xl ">I am a passionate and
+                        <p class="text-white text-start mt-5  text-2xl xs:text-sm lg:text-2xl">I'm a creative designer and
+                           I am a passionate and
                             dedicated software
-                            developer with a creative design flair. <br>My commitment to delivering professional
+                            developer with a creative design flair.My commitment to delivering professional
                             solutions
                             reflects in every project I undertake.</p>
                         <div
                             class="text-yellow-200 text-xl  border-b-2 border-gray-300 m-auto mt-5 font-semibold xs:text-sm lg:text-2xl">
                             Social Media</div>
-                        <div class="flex mt-3 justify-center my-3">
+                        <div class="flex mt-3 justify-center my-4">
                             <div class="mx-2">
                                 <a class="" href="https://www.facebook.com/alvir15/"><ion-icon
-                                        class="text-2xl  text-white xs:text-xl lg:text-4xl"
+                                        class="text-2xl  text-white xs:text-2xl lg:text-4xl"
                                         name="logo-facebook"></ion-icon></a>
                             </div>
                             <div class="mx-4">
-                                <a class="text-5xl text-white xs:text-xl lg:text-4xl"
+                                <a class="text-5xl text-white xs:text-2xl lg:text-4xl"
                                     href="https://github.com/Aakashkandel"><ion-icon name="logo-github"></ion-icon></a>
                             </div>
                             <div class="mx-4">
-                                <a class="text-5xl text-white xs:text-xl lg:text-4xl"
+                                <a class="text-5xl text-white xs:text-2xl lg:text-4xl"
                                     href="https://www.linkedin.com/in/aakash-kandel-b97b1b2a1/"><ion-icon
                                         name="logo-linkedin"></ion-icon></a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class=" overflow-hidden rounded-tl-full rounded-bl-full xs:rounded-full xs:m-auto xs:h-16 md:h-auto md:m-auto  lg:rounded-bl-none lg:w-auto lg:h-full xs:w-8/12  lg:rounded-tr-none lg:rounded-br-none "
-                    >
-                   <img class="border-2 border-gray-500 position:relative" src="./image/aakash.png" alt="">
+                <div
+                    class=" overflow-hidden rounded-tl-full rounded-bl-full xs:rounded-full xs:m-auto xs:h-16 md:h-auto md:m-auto  lg:rounded-bl-none lg:w-auto lg:h-full xs:w-8/12  lg:rounded-tr-none lg:rounded-br-none ">
+                    <img class="border-2 border-gray-500 position:relative" src="./image/aakash.png" alt="">
                 </div>
             </div>
 
@@ -693,5 +728,29 @@
 
 
 
+
+</script>
+
+
+
+<script>
+function toggleMenu() {
+  const menuItems = document.getElementById("menuItems");
+  menuItems.classList.toggle("hidden");
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  const menuItems = document.getElementById("menuItems");
+  menuItems.classList.add("hidden"); // Hide menu items when the page is loaded
+});
+
+document.addEventListener("click", function(event) {
+  const menuItems = document.getElementById("menuItems");
+  const menuIcon = document.querySelector(".menu-icon");
+
+  if (!menuIcon.contains(event.target) && !menuItems.contains(event.target)) {
+    menuItems.classList.add("xs:hidden");
+  }
+});
 
 </script>
